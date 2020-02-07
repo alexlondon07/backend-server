@@ -1,9 +1,13 @@
 // Requires
 var express = require('express');
+var mongoose = require('mongoose');
 
 // Init variables
 var app = express();
 
+
+//Bb
+mongoose.connection.openUri('mongodb://localhost:27017/hospitalBD')
 
 // Routes
 app.get('/', (req, res, next) => {
