@@ -38,7 +38,7 @@ app.post('/', (req, res) => {
 
     user.save( (err, userSaved) => {
         if( err ) {
-            return  res.status(500).json({
+            return  res.status(400).json({
                 ok: false,
                 message: 'Error saving the user',
                 erros: err
