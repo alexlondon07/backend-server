@@ -5,19 +5,18 @@ var mongoose = require('mongoose');
 // Init variables
 var app = express();
 
+// Import Routes
+var appRoutes = require('./routes/app');
+var userRoutes = require('./routes/user');
 
-//Bb
+// Routes
+app.use('/users', userRoutes);
+app.use('/', appRoutes);
+
+//Db
 mongoose.connection.openUri('mongodb://localhost:27017/hospitalBD', (err, res) => {
     if(err) throw err;
     console.log('Mongobd running');
-});
-
-// Routes
-app.get('/', (req, res, next) => {
-    res.status(404).json({
-        ok: true,
-        message: 'Successful request'
-    })
 });
 
 

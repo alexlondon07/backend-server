@@ -10,4 +10,4 @@ var userSchema = new Schema({
     role: { type: String, required: true, default: 'USER_ROLE' },
 });
 
-module.exports = monggose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);
