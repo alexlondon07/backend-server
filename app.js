@@ -7,7 +7,10 @@ var app = express();
 
 
 //Bb
-mongoose.connection.openUri('mongodb://localhost:27017/hospitalBD')
+mongoose.connection.openUri('mongodb://localhost:27017/hospitalBD', (err, res) => {
+    if(err) throw err;
+    console.log('Mongobd running');
+});
 
 // Routes
 app.get('/', (req, res, next) => {
