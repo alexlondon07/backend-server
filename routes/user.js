@@ -73,6 +73,36 @@ app.put('/:id', (req, res) => {
     });
 });
 
+/**
+ * Método para borrar un usuario
+ */
+app.delete('/:id', (req, res) => {
+    
+    var id = req.params.id;
+
+    User.findByIdAndRemove(id, (err, userDeleted) => {
+        if( err ) {
+            return  res.status(500).json({
+                ok: false,
+                message: 'Error al borrar el usuario',
+                erros: err
+            });
+        }
+
+        if( !userDeleted ){
+            return  res.status(400).json({
+                ok: false,
+                message: 'No existe un usuario con ese id ' + id,
+                erros: { message: 'No existe un usuario con ese id'}
+            });
+        }
+
+        res.status(200).json({
+            ok: true,
+            user: userDeleted
+        });
+    })
+});
 
 /**
  * Método para guardar usuario
