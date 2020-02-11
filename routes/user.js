@@ -19,7 +19,7 @@ app.get('/', (req, res, next) => {
             });
         }
             
-        res.status(404).json({
+        res.status(200).json({
             ok: true,
             users: users
         });
@@ -101,7 +101,7 @@ app.delete('/:id', (req, res) => {
             ok: true,
             user: userDeleted
         });
-    })
+    });
 });
 
 /**
