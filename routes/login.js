@@ -1,5 +1,6 @@
 var express = require('express');
 var bcrypt = require('bcryptjs');
+var jwt = require('jsonwebtoken');
 
 // Init variables
 var app = express();
@@ -33,9 +34,14 @@ app.post('/', (req, res) => {
             });
         }
 
+        // Generar Token
+        userBD.password = ':)';
+        var token = jwt.sign({ user: userBD }, 'este-es-un-c-dificl', { expiresIn: 14400} ); // 4 Horas
+
         res.status(200).json({
             ok: true,
             user: userBD,
+            token: token,
             id: userBD._id
         });
     })
