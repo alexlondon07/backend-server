@@ -1,8 +1,7 @@
 var express = require('express');
 var bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
-
-var SEED = require('../config/config').SEED;
+var mdAuthentication = require('../middlewares/authentication');
 
 // Init variables
 var app = express();
@@ -20,8 +19,7 @@ app.get('/', (req, res, next) => {
                 message: 'Error al obtener los usuarios',
                 erros: err
             });
-        }
-            
+        }   
         res.status(200).json({
             ok: true,
             users: users
@@ -29,28 +27,10 @@ app.get('/', (req, res, next) => {
     })
 });
 
-
-/**
- * Verificar Token
- */
-app.use('/', (req, res, next) => {
-    var token = req.query.token;
-    jwt.verify ( token, SEED, ( err, decoded )=>{
-        if( err ) {
-            return  res.status(401).json({
-                ok: false,
-                message: 'Token incorrecto',
-                erros: err
-            });
-        }
-        next();
-    })
-});
-
 /**
  * Método para actualizar usuario
  */
-app.put('/:id', (req, res) => {
+app.put('/:id',mdAuthentication.verifyToken, (req, res) => {
     
     var id = req.params.id;
     var body = req.body;
@@ -96,7 +76,7 @@ app.put('/:id', (req, res) => {
 /**
  * Método para borrar un usuario
  */
-app.delete('/:id', (req, res) => {
+app.delete('/:id',mdAuthentication.verifyToken, (req, res) => {
     
     var id = req.params.id;
 
@@ -127,7 +107,7 @@ app.delete('/:id', (req, res) => {
 /**
  * Método para guardar usuario
  */
-app.post('/', (req, res) => {
+app.post('/',mdAuthentication.verifyToken, (req, res) => {
     var body = req.body;
 
     var user = new User({
@@ -148,7 +128,8 @@ app.post('/', (req, res) => {
         }
         res.status(404).json({
             ok: true,
-            user: userSaved
+            user: userSaved,
+            userToken: req.user
         });
     });
 });
