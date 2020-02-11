@@ -1,0 +1,662 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Hospital BD",
+		"_postman_id": "3d52d579-fd6b-d239-024d-eb5e14a8b8ad",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get users",
+			"request": {
+				"url": "http://localhost:3001/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:3001/users"
+			},
+			"response": [
+				{
+					"id": "d35e0e70-ef35-43a6-acf6-4c71dc07a5b3",
+					"name": "Get users",
+					"originalRequest": {
+						"url": "http://localhost:3001/users",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "163",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 10 Feb 2020 19:06:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"a3-FIqeFfdGNSv8RgZyxuUDbRxdm/Q\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 46,
+					"body": "{\"ok\":true,\"users\":[{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e41750c27908066e4b2eedb\",\"name\":\"Alexander Andrés Londoño Espejo\",\"email\":\"alexlondon07@gmail.com\",\"img\":null}]}"
+				}
+			]
+		},
+		{
+			"name": "Post User",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3001/users?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDM4MjQ1LCJleHAiOjE1ODE0NTI2NDV9.7BXsrpuMLw4GiGbBqQHskFJ_ag5UW4RkeASZx22Ew8A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDM4MjQ1LCJleHAiOjE1ODE0NTI2NDV9.7BXsrpuMLw4GiGbBqQHskFJ_ag5UW4RkeASZx22Ew8A",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "alexlondon07@correo.co",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "alexlondon07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alexander Londoño  Espejo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ADMIN_ROLE",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "http://localhost:3001/users"
+			},
+			"response": [
+				{
+					"id": "511cce94-84c3-48fd-9c07-31baede72897",
+					"name": "Post User",
+					"originalRequest": {
+						"url": "http://localhost:3001/users",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "emiliana@correo.co",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "emiliana",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Emiliana Londoño Martinez",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "305",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 10 Feb 2020 19:20:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"131-sWKq+jouAYdloPEM6MohFSoiZiM\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 77,
+					"body": "{\"ok\":false,\"message\":\"Error saving the user\",\"erros\":{\"driver\":true,\"name\":\"MongoError\",\"index\":0,\"code\":11000,\"keyPattern\":{\"email\":1},\"keyValue\":{\"email\":\"emiliana@correo.co\"},\"errmsg\":\"E11000 duplicate key error collection: hospitalBD.users index: email_1 dup key: { email: \\\"emiliana@correo.co\\\" }\"}}"
+				}
+			]
+		},
+		{
+			"name": "Put User",
+			"request": {
+				"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "emiliana@correo.co",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Emiliana Londoño Martinez la bebe",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ADMIN_ROLE",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "http://localhost:3001/users/5e42bb315457c22208df0be9"
+			},
+			"response": [
+				{
+					"id": "d13124fe-79ce-4061-b5e7-84b53b2b2603",
+					"name": "Put User",
+					"originalRequest": {
+						"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "11",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 11 Feb 2020 14:38:55 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"b-Ai2R8hgEarLmHKwesT1qcY913ys\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"ok\":true}"
+				},
+				{
+					"id": "34288011-d7ac-4c47-88e8-5e138ab83970",
+					"name": "Put User",
+					"originalRequest": {
+						"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "emiliana@correo.co",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Emiliana Londoño Martinez la bebe",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN_ROLE",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "228",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 11 Feb 2020 14:53:06 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"e4-SyoNV5W0YSUQLLjdV65Nsk0AHAE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 49,
+					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42bb315457c22208df0be9\",\"name\":\"Emiliana Londoño Martinez la bebe\",\"email\":\"emiliana@correo.co\",\"password\":\"$2a$10$7S.KunTw1aYq9tMzG8gwSO.tkajGLKGDGCl1bcjaSePLCuojyvWA2\",\"__v\":0}}"
+				}
+			]
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"url": "http://localhost:3001/users/5e42d85d3440a843b490d498",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:3001/users/5e42bb315457c22208df0be9"
+			},
+			"response": [
+				{
+					"id": "738b31ce-f249-4adb-b8a6-ace9d1385784",
+					"name": "Delete User",
+					"originalRequest": {
+						"url": "http://localhost:3001/users/5e42c6ccae557f4e9019de9f",
+						"method": "DELETE",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "135",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 11 Feb 2020 15:23:13 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"87-dZ4KZ/EWK07PNf3JHEbgYw2SAp4\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 35,
+					"body": "{\"ok\":false,\"message\":\"No existe un usuario con ese id 5e42c6ccae557f4e9019de9f\",\"erros\":{\"message\":\"No existe un usuario con ese id\"}}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://localhost:3001/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "emiliana@correo.co",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "emiliana",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "http://localhost:3001/login"
+			},
+			"response": [
+				{
+					"id": "c50ff371-bdc0-45eb-8b63-a54acb8cac63",
+					"name": "Login",
+					"originalRequest": {
+						"url": "http://localhost:3001/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "emiliana@correo.co",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "emiliana",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "252",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 11 Feb 2020 15:49:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"fc-2Fb8hUCb0htRnCOG+2fhh9cJjZQ\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 131,
+					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\"$2a$10$X3Ju.Wk83IA4tgiAyA3fDOGLwyD39bddMGcNodPvaH5shhMcVTBsK\",\"__v\":0},\"id\":\"5e42c9f712f13c38281fc4e2\"}"
+				},
+				{
+					"id": "d7017248-6ea6-41b6-bdf3-ab9da612b98d",
+					"name": "Login",
+					"originalRequest": {
+						"url": "http://localhost:3001/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "emiliana@correo.co",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "emiliana",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "534",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 11 Feb 2020 15:59:01 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"216-fwX5NMc1L5TIWUuJJOAZVepv+4M\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1524,
+					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\":)\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDM2NzQxLCJleHAiOjE1ODE0NTExNDF9.16_LCuSiPpW51tLwlh-ggraPql3aBVbdIRmLBfQl3N8\",\"id\":\"5e42c9f712f13c38281fc4e2\"}"
+				}
+			]
+		}
+	]
+}
