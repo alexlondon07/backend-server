@@ -1,4 +1,5 @@
 var express = require('express');
+var bcrypt = require('bcryptjs');
 
 // Init variables
 var app = express();
@@ -13,7 +14,7 @@ app.get('/', (req, res, next) => {
         if( err ) {
             return  res.status(500).json({
                 ok: false,
-                message: 'Error get all users',
+                message: 'Error al obtener los usuarios',
                 erros: err
             });
         }
@@ -31,7 +32,7 @@ app.post('/', (req, res) => {
     var user = new User({
         name: body.name,
         email: body.email,
-        password: body.password,
+        password: bcrypt.hashSync(body.password, 10),
         img: body.img,
         role: body.role
     })
@@ -40,7 +41,7 @@ app.post('/', (req, res) => {
         if( err ) {
             return  res.status(400).json({
                 ok: false,
-                message: 'Error saving the user',
+                message: 'Error guardado el usuario',
                 erros: err
             });
         }
