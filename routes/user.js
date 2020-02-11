@@ -26,6 +26,57 @@ app.get('/', (req, res, next) => {
     })
 });
 
+
+/**
+ * Método para actualizar usuario
+ */
+app.put('/:id', (req, res) => {
+    
+    var id = req.params.id;
+    var body = req.body;
+
+    User.findById(id, ( err, user ) => {
+        if( err ) {
+            return  res.status(500).json({
+                ok: false,
+                message: 'Error al buscar el usuario',
+                erros: err
+            });
+        }
+        if( !user ){
+            return  res.status(400).json({
+                ok: false,
+                message: 'El usuario con el ' + id + ' no existe',
+                erros: { message: 'No existe un usuario con ese id'}
+            });
+        }
+        user.name = body.name;
+        user.email = body.email;
+        user.role = body.role;
+
+        user.save( (err, userUpdated) => {
+            if( err ) {
+                return  res.status(400).json({
+                    ok: false,
+                    message: 'Error al actualizar el usuario',
+                    erros: err
+                });
+            }
+    
+            userUpdated.password = ':)';
+            res.status(200).json({
+                ok: true,
+                user: userUpdated
+            });
+    
+        });
+    });
+});
+
+
+/**
+ * Método para guardar usuario
+ */
 app.post('/', (req, res) => {
     var body = req.body;
 
@@ -41,7 +92,7 @@ app.post('/', (req, res) => {
         if( err ) {
             return  res.status(400).json({
                 ok: false,
-                message: 'Error guardado el usuario',
+                message: 'Error guardando el usuario',
                 erros: err
             });
         }
