@@ -10,6 +10,7 @@ var Hospital = require('../models/hospital');
 app.get('/', (req, res, next) => {
 
     Hospital.find({})
+    .populate('user', 'name email')
     .exec(
         (err, hospitals) => {
         if( err ) {
