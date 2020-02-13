@@ -1,6 +1,7 @@
 var express = require('express');
 var mdAuthentication = require('../middlewares/authentication');
 
+
 // Init variables
 var app = express();
 
@@ -9,9 +10,14 @@ var Doctor = require('../models/doctor');
 // Routes
 app.get('/', (req, res, next) => {
 
+    var from = req.query.from || 0;
+    from = Number(from);
+
     Doctor.find({})
     .populate('user', 'name email')
     .populate('hospital')
+    .skip(from)
+    .limit(5)
     .exec(
         (err, doctors) => {
         if( err ) {
@@ -21,9 +27,12 @@ app.get('/', (req, res, next) => {
                 erros: err
             });
         }   
-        res.status(200).json({
-            ok: true,
-            doctors: doctors
+        Doctor.count({}, (err, count)=>{
+            res.status(200).json({
+                ok: true,
+                doctors: doctors,
+                total: count
+            });
         });
     })
 });

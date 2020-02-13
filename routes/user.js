@@ -10,7 +10,12 @@ var User = require('../models/user');
 // Routes
 app.get('/', (req, res, next) => {
 
+    var from = req.query.from || 0;
+    from = Number(from);
+
     User.find({}, 'name email img role')
+    .skip(from)
+    .limit(5)
     .exec(
         (err, users) => {
         if( err ) {
@@ -20,10 +25,16 @@ app.get('/', (req, res, next) => {
                 erros: err
             });
         }   
-        res.status(200).json({
-            ok: true,
-            users: users
-        });
+
+        User.count({}, (err, count)=>{
+            res.status(200).json({
+                ok: true,
+                users: users,
+                total: count
+            });
+        })
+
+        
     })
 });
 
