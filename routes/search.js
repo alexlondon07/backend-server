@@ -7,7 +7,9 @@ var User = require('../models/user');
 // Init variables
 var app = express();
 
-
+/**
+ * Búsqueda General
+ */
 app.get('/all/:search', (req, res, next) => {
 
     var search = req.params.search;
@@ -27,6 +29,43 @@ app.get('/all/:search', (req, res, next) => {
             });
         });
 });
+
+/**
+ * Búsqueda por colección
+ */
+app.get('/collection/:table/:search', (req, res, next) => {
+
+    var search = req.params.search;
+    var table = req.params.table;
+    var regex = new RegExp( search, 'i');
+    var promise;
+
+    switch ( table ) {
+        case 'user':
+            promise = searchUser( search, regex );
+            break;
+        case 'doctor':
+            promise = searchDoctors( search, regex );
+            break;
+        case 'hospital':
+            promise = serchHospitals( search, regex );
+            break;
+        default:
+            res.status(500).json({
+                ok: false,
+                message: 'Los tipos de búsqueda sólo son : user, doctor, hospital',
+                error: { message: 'Tipo de tabla/coleccion no válido' }
+            });
+            break;
+    }
+    promise.then( data => {
+        res.status(200).json({
+            ok: true,
+            [table]: data
+        });
+    })
+});
+
 
 function serchHospitals( search, regex) {
 
