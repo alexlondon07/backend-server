@@ -16,7 +16,6 @@ app.use(fileUpload());
  * Búsqueda General
  */
 app.put('/:type/:id', (req, res, next) => {
-
     var type = req.params.type;
     var id = req.params.id;
 
