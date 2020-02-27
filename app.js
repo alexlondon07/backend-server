@@ -10,6 +10,11 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+// server Index
+var serveIndex = require('serve-index');
+app.use(express.static(__dirname + '/'))
+app.use('/upload', serveIndex(__dirname + '/upload'));
+
 // Import Routes
 var appRoutes = require('./routes/app');
 var userRoutes = require('./routes/user');
