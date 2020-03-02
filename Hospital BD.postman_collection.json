@@ -8,145 +8,603 @@
 	},
 	"item": [
 		{
-			"name": "Get users",
-			"request": {
-				"url": "http://localhost:3001/users",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": "http://localhost:3001/users"
-			},
-			"response": [
+			"name": "Hospital",
+			"description": "",
+			"item": [
 				{
-					"id": "d35e0e70-ef35-43a6-acf6-4c71dc07a5b3",
-					"name": "Get users",
-					"originalRequest": {
-						"url": "http://localhost:3001/users",
+					"name": "Get Hospital",
+					"request": {
+						"url": "http://localhost:3001/hospital",
 						"method": "GET",
 						"header": [],
-						"body": {}
+						"body": {},
+						"description": "http://localhost:3001/hospital"
 					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-length",
-							"key": "content-length",
-							"value": "163",
-							"description": "The length of the response body in octets (8-bit bytes)"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json; charset=utf-8",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Mon, 10 Feb 2020 19:06:47 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "etag",
-							"key": "etag",
-							"value": "W/\"a3-FIqeFfdGNSv8RgZyxuUDbRxdm/Q\"",
-							"description": "An identifier for a specific version of a resource, often a message digest"
-						},
-						{
-							"name": "x-powered-by",
-							"key": "x-powered-by",
-							"value": "Express",
-							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-						}
-					],
-					"cookie": [],
-					"responseTime": 46,
-					"body": "{\"ok\":true,\"users\":[{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e41750c27908066e4b2eedb\",\"name\":\"Alexander Andrés Londoño Espejo\",\"email\":\"alexlondon07@gmail.com\",\"img\":null}]}"
-				}
-			]
-		},
-		{
-			"name": "Post User",
-			"request": {
-				"url": {
-					"raw": "http://localhost:3001/users?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDM4MjQ1LCJleHAiOjE1ODE0NTI2NDV9.7BXsrpuMLw4GiGbBqQHskFJ_ag5UW4RkeASZx22Ew8A",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3001",
-					"path": [
-						"users"
-					],
-					"query": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDM4MjQ1LCJleHAiOjE1ODE0NTI2NDV9.7BXsrpuMLw4GiGbBqQHskFJ_ag5UW4RkeASZx22Ew8A",
-							"equals": true,
-							"description": ""
-						}
-					],
-					"variable": []
+					"response": []
 				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "email",
-							"value": "alexlondon07@correo.co",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "alexlondon07",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "name",
-							"value": "Alexander Londoño  Espejo",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "role",
-							"value": "ADMIN_ROLE",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"description": "http://localhost:3001/users"
-			},
-			"response": [
 				{
-					"id": "511cce94-84c3-48fd-9c07-31baede72897",
-					"name": "Post User",
-					"originalRequest": {
-						"url": "http://localhost:3001/users",
+					"name": "Post Hospital",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/hospital?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"hospital"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
-								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hospital Pablo Tobón Uribe...",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Method to save a hospital"
+					},
+					"response": [
+						{
+							"id": "1e33ab22-92eb-4c9e-a577-c65b6c2bbecb",
+							"name": "Post Hospital",
+							"originalRequest": {
+								"url": {
+									"raw": "http://localhost:3001/hospital?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"hospital"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Hospital Pablo Tobón Uribe",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"value": "null",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "267",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 20:29:17 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"10b-2b94PvxGKT2NeGIC/IyPqhER/0s\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 99,
+							"body": "{\"ok\":true,\"user\":{\"_id\":\"5e430e9d0fbfd32f640f0ea7\",\"name\":\"Hospital Pablo Tobón Uribe\",\"img\":\"null\",\"__v\":0},\"userToken\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\":)\",\"__v\":0}}"
+						},
+						{
+							"id": "69202f86-1328-4a38-adb6-ac7271cef500",
+							"name": "Post Hospital",
+							"originalRequest": {
+								"url": {
+									"raw": "http://localhost:3001/hospital?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"hospital"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Hospital Pablo Tobón Uribe",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "132",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 20:45:17 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"84-dfeH2mWbYQYH5/WaXR89xtwhyEc\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 397,
+							"body": "{\"ok\":true,\"user\":{\"_id\":\"5e43125d2fd04507c0479bed\",\"name\":\"Hospital Pablo Tobón Uribe\",\"user\":\"5e42c9f712f13c38281fc4e2\",\"__v\":0}}"
+						}
+					]
+				},
+				{
+					"name": "Put Hospital",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/hospital/5e43125d2fd04507c0479bed?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"hospital",
+								"5e43125d2fd04507c0479bed"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hospital Pablo Tobón Uribe... 3",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Hospital",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/hospital/5e43125d2fd04507c0479bed?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"hospital",
+								"5e43125d2fd04507c0479bed"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDUyODk0LCJleHAiOjE1ODE0NjcyOTR9.lqlVIezZO9uK2kmZaITBYChfarHv6haobSpzteMMaYM",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put Doctor",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/doctor/5e431bb8952eee31b0fd06ea?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor",
+								"5e431bb8952eee31b0fd06ea"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Dr Alejandro Londoño",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hospital",
+									"value": "5e431393b3365b591467fe5c",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "44d4948d-e943-4e5f-9a70-eeb734bb025f",
+							"name": "Put Doctor",
+							"originalRequest": {
+								"url": {
+									"raw": "http://localhost:3001/doctor/5e431bb8952eee31b0fd06ea?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"doctor",
+										"5e431bb8952eee31b0fd06ea"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Dr Alejandro Londoño",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "hospital",
+											"value": "5e431393b3365b591467fe5c",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "166",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 21:34:23 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"a6-vKfePHZP0DfCPn8PM5MqSIgT7vg\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 62,
+							"body": "{\"ok\":true,\"doctor\":{\"_id\":\"5e431bb8952eee31b0fd06ea\",\"name\":\"Dr Alejandro Londoño\",\"user\":\"5e42c9f712f13c38281fc4e2\",\"hospital\":\"5e431393b3365b591467fe5c\",\"__v\":0}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Get users",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/users?from=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "5",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "http://localhost:3001/users"
+					},
+					"response": [
+						{
+							"id": "ba31d9cd-d27b-4af3-a9ab-1e51a6cf5fdd",
+							"name": "Get users",
+							"originalRequest": {
+								"url": "http://localhost:3001/users",
+								"method": "GET",
+								"header": [],
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "163",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Mon, 10 Feb 2020 19:06:47 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"a3-FIqeFfdGNSv8RgZyxuUDbRxdm/Q\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 46,
+							"body": "{\"ok\":true,\"users\":[{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e41750c27908066e4b2eedb\",\"name\":\"Alexander Andrés Londoño Espejo\",\"email\":\"alexlondon07@gmail.com\",\"img\":null}]}"
+						}
+					]
+				},
+				{
+					"name": "Post User",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/users?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNjIzMTg2LCJleHAiOjE1ODE2Mzc1ODZ9.cg1GmVCCJEUBZVNm8Ruy1xFAYXYMKCwIXPsQ04VKx3E",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNjIzMTg2LCJleHAiOjE1ODE2Mzc1ODZ9.cg1GmVCCJEUBZVNm8Ruy1xFAYXYMKCwIXPsQ04VKx3E",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
 								"value": "application/x-www-form-urlencoded",
 								"description": ""
 							}
@@ -156,176 +614,127 @@
 							"urlencoded": [
 								{
 									"key": "email",
-									"value": "emiliana@correo.co",
+									"value": "alexlondon085@correo.co",
 									"description": "",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "emiliana",
+									"value": "alexlondon07",
 									"description": "",
 									"type": "text"
 								},
 								{
 									"key": "name",
-									"value": "Emiliana Londoño Martinez",
+									"value": "Alexander Londoño  Espejo ",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN_ROLE",
 									"description": "",
 									"type": "text"
 								}
 							]
-						}
+						},
+						"description": "http://localhost:3001/users"
 					},
-					"status": "Internal Server Error",
-					"code": 500,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
+					"response": [
 						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-length",
-							"key": "content-length",
-							"value": "305",
-							"description": "The length of the response body in octets (8-bit bytes)"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json; charset=utf-8",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Mon, 10 Feb 2020 19:20:53 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "etag",
-							"key": "etag",
-							"value": "W/\"131-sWKq+jouAYdloPEM6MohFSoiZiM\"",
-							"description": "An identifier for a specific version of a resource, often a message digest"
-						},
-						{
-							"name": "x-powered-by",
-							"key": "x-powered-by",
-							"value": "Express",
-							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-						}
-					],
-					"cookie": [],
-					"responseTime": 77,
-					"body": "{\"ok\":false,\"message\":\"Error saving the user\",\"erros\":{\"driver\":true,\"name\":\"MongoError\",\"index\":0,\"code\":11000,\"keyPattern\":{\"email\":1},\"keyValue\":{\"email\":\"emiliana@correo.co\"},\"errmsg\":\"E11000 duplicate key error collection: hospitalBD.users index: email_1 dup key: { email: \\\"emiliana@correo.co\\\" }\"}}"
-				}
-			]
-		},
-		{
-			"name": "Put User",
-			"request": {
-				"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "email",
-							"value": "emiliana@correo.co",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "name",
-							"value": "Emiliana Londoño Martinez la bebe",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "role",
-							"value": "ADMIN_ROLE",
-							"description": "",
-							"type": "text"
+							"id": "32a103de-47eb-462a-b2fb-fe4b5eeb3a13",
+							"name": "Post User",
+							"originalRequest": {
+								"url": "http://localhost:3001/users",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "emiliana@correo.co",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "emiliana",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Emiliana Londoño Martinez",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "305",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Mon, 10 Feb 2020 19:20:53 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"131-sWKq+jouAYdloPEM6MohFSoiZiM\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 77,
+							"body": "{\"ok\":false,\"message\":\"Error saving the user\",\"erros\":{\"driver\":true,\"name\":\"MongoError\",\"index\":0,\"code\":11000,\"keyPattern\":{\"email\":1},\"keyValue\":{\"email\":\"emiliana@correo.co\"},\"errmsg\":\"E11000 duplicate key error collection: hospitalBD.users index: email_1 dup key: { email: \\\"emiliana@correo.co\\\" }\"}}"
 						}
 					]
 				},
-				"description": "http://localhost:3001/users/5e42bb315457c22208df0be9"
-			},
-			"response": [
 				{
-					"id": "d13124fe-79ce-4061-b5e7-84b53b2b2603",
 					"name": "Put User",
-					"originalRequest": {
-						"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
-						"method": "PUT",
-						"header": [],
-						"body": {}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-length",
-							"key": "content-length",
-							"value": "11",
-							"description": "The length of the response body in octets (8-bit bytes)"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json; charset=utf-8",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 11 Feb 2020 14:38:55 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "etag",
-							"key": "etag",
-							"value": "W/\"b-Ai2R8hgEarLmHKwesT1qcY913ys\"",
-							"description": "An identifier for a specific version of a resource, often a message digest"
-						},
-						{
-							"name": "x-powered-by",
-							"key": "x-powered-by",
-							"value": "Express",
-							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-						}
-					],
-					"cookie": [],
-					"responseTime": 18,
-					"body": "{\"ok\":true}"
-				},
-				{
-					"id": "34288011-d7ac-4c47-88e8-5e138ab83970",
-					"name": "Put User",
-					"originalRequest": {
+					"request": {
 						"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
-								"name": "Content-Type",
 								"value": "application/x-www-form-urlencoded",
 								"description": ""
 							}
@@ -352,120 +761,669 @@
 									"type": "text"
 								}
 							]
-						}
+						},
+						"description": "http://localhost:3001/users/5e42bb315457c22208df0be9"
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
+					"response": [
 						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
+							"id": "8b1617ba-ae86-4ddc-a207-e2835e91d3d6",
+							"name": "Put User",
+							"originalRequest": {
+								"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
+								"method": "PUT",
+								"header": [],
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "11",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 14:38:55 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"b-Ai2R8hgEarLmHKwesT1qcY913ys\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 18,
+							"body": "{\"ok\":true}"
 						},
 						{
-							"name": "content-length",
-							"key": "content-length",
-							"value": "228",
-							"description": "The length of the response body in octets (8-bit bytes)"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json; charset=utf-8",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 11 Feb 2020 14:53:06 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "etag",
-							"key": "etag",
-							"value": "W/\"e4-SyoNV5W0YSUQLLjdV65Nsk0AHAE\"",
-							"description": "An identifier for a specific version of a resource, often a message digest"
-						},
-						{
-							"name": "x-powered-by",
-							"key": "x-powered-by",
-							"value": "Express",
-							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+							"id": "44028524-e365-4d30-850f-9d17a50b1229",
+							"name": "Put User",
+							"originalRequest": {
+								"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "emiliana@correo.co",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Emiliana Londoño Martinez la bebe",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "ADMIN_ROLE",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "228",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 14:53:06 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"e4-SyoNV5W0YSUQLLjdV65Nsk0AHAE\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 49,
+							"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42bb315457c22208df0be9\",\"name\":\"Emiliana Londoño Martinez la bebe\",\"email\":\"emiliana@correo.co\",\"password\":\"$2a$10$7S.KunTw1aYq9tMzG8gwSO.tkajGLKGDGCl1bcjaSePLCuojyvWA2\",\"__v\":0}}"
 						}
-					],
-					"cookie": [],
-					"responseTime": 49,
-					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42bb315457c22208df0be9\",\"name\":\"Emiliana Londoño Martinez la bebe\",\"email\":\"emiliana@correo.co\",\"password\":\"$2a$10$7S.KunTw1aYq9tMzG8gwSO.tkajGLKGDGCl1bcjaSePLCuojyvWA2\",\"__v\":0}}"
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"url": "http://localhost:3001/users/5e42d85d3440a843b490d498",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": "http://localhost:3001/users/5e42bb315457c22208df0be9"
+					},
+					"response": [
+						{
+							"id": "d960a78e-37d2-4c1e-a5ca-2438a6e8dbe7",
+							"name": "Delete User",
+							"originalRequest": {
+								"url": "http://localhost:3001/users/5e42c6ccae557f4e9019de9f",
+								"method": "DELETE",
+								"header": [],
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "135",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 15:23:13 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"87-dZ4KZ/EWK07PNf3JHEbgYw2SAp4\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 35,
+							"body": "{\"ok\":false,\"message\":\"No existe un usuario con ese id 5e42c6ccae557f4e9019de9f\",\"erros\":{\"message\":\"No existe un usuario con ese id\"}}"
+						}
+					]
 				}
 			]
 		},
 		{
-			"name": "Delete User",
-			"request": {
-				"url": "http://localhost:3001/users/5e42d85d3440a843b490d498",
-				"method": "DELETE",
-				"header": [],
-				"body": {},
-				"description": "http://localhost:3001/users/5e42bb315457c22208df0be9"
-			},
-			"response": [
+			"name": "Doctor",
+			"description": "",
+			"item": [
 				{
-					"id": "738b31ce-f249-4adb-b8a6-ace9d1385784",
-					"name": "Delete User",
-					"originalRequest": {
-						"url": "http://localhost:3001/users/5e42c6ccae557f4e9019de9f",
+					"name": "Get doctors",
+					"request": {
+						"url": "http://localhost:3001/doctor",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post Doctor",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/doctor?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNTE1OTA4LCJleHAiOjE1ODE1MzAzMDh9.ixWYas7tyUSJeLPmVoudTR4lTVBlN_J3HM5pKxc3330",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNTE1OTA4LCJleHAiOjE1ODE1MzAzMDh9.ixWYas7tyUSJeLPmVoudTR4lTVBlN_J3HM5pKxc3330",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Alexander",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hospital",
+									"value": "5e431393b3365b591467fe5c",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "43d83b6b-c2cc-4a45-b0db-504496423876",
+							"name": "Post Doctor",
+							"originalRequest": {
+								"url": {
+									"raw": "http://localhost:3001/doctor?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"doctor"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Alexander",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "hospital",
+											"value": "5e431393b3365b591467fe5c",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "154",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 21:25:03 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"9a-keuPBfAOCUIkTjO0A43PN5cVvo0\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 57,
+							"body": "{\"ok\":true,\"doctor\":{\"_id\":\"5e431baf952eee31b0fd06e9\",\"name\":\"Alexander\",\"user\":\"5e42c9f712f13c38281fc4e2\",\"hospital\":\"5e431393b3365b591467fe5c\",\"__v\":0}}"
+						}
+					]
+				},
+				{
+					"name": "Put Doctor",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/doctor/5e431e0345f20869e8f474b3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor",
+								"5e431e0345f20869e8f474b3"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Emiliana Londoño Martinez",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hospital",
+									"value": "5e431393b3365b591467fe5c",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "2b25bd5c-d0f9-4b30-a768-b43158033d85",
+							"name": "Put Doctor",
+							"originalRequest": {
+								"url": {
+									"raw": "http://localhost:3001/doctor/5e431e0345f20869e8f474b3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"doctor",
+										"5e431e0345f20869e8f474b3"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Emiliana Londoño Martinez",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "hospital",
+											"value": "5e431393b3365b591467fe5c",
+											"description": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "171",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 21:36:08 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"ab-Dc/VLF6fZE9W8zzDp3RB4400mCM\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 33,
+							"body": "{\"ok\":true,\"doctor\":{\"_id\":\"5e431e0345f20869e8f474b3\",\"name\":\"Emiliana Londoño Martinez\",\"user\":\"5e42c9f712f13c38281fc4e2\",\"hospital\":\"5e431393b3365b591467fe5c\",\"__v\":0}}"
+						}
+					]
+				},
+				{
+					"name": "Delete Doctor",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3001/doctor/5e431e0345f20869e8f474b3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"doctor",
+								"5e431e0345f20869e8f474b3"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
 						"method": "DELETE",
 						"header": [],
-						"body": {}
+						"body": {},
+						"description": ""
 					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "text",
-					"header": [
+					"response": [
 						{
-							"name": "connection",
-							"key": "connection",
-							"value": "keep-alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-length",
-							"key": "content-length",
-							"value": "135",
-							"description": "The length of the response body in octets (8-bit bytes)"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json; charset=utf-8",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Tue, 11 Feb 2020 15:23:13 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "etag",
-							"key": "etag",
-							"value": "W/\"87-dZ4KZ/EWK07PNf3JHEbgYw2SAp4\"",
-							"description": "An identifier for a specific version of a resource, often a message digest"
-						},
-						{
-							"name": "x-powered-by",
-							"key": "x-powered-by",
-							"value": "Express",
-							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+							"id": "595f12d3-98a1-417e-9ecf-e7f9026d32b8",
+							"name": "Delete Doctor",
+							"originalRequest": {
+								"url": {
+									"raw": "http://localhost:3001/doctor/5e431e0345f20869e8f474b3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"doctor",
+										"5e431e0345f20869e8f474b3"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDU2MDAwLCJleHAiOjE1ODE0NzA0MDB9.0_psSqy2We4SWMorDOvS77Aqkswnmx_TntB6aRdMkWI",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "keep-alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "171",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Tue, 11 Feb 2020 21:36:47 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "etag",
+									"key": "etag",
+									"value": "W/\"ab-Dc/VLF6fZE9W8zzDp3RB4400mCM\"",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "Express",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"responseTime": 72,
+							"body": "{\"ok\":true,\"doctor\":{\"_id\":\"5e431e0345f20869e8f474b3\",\"name\":\"Emiliana Londoño Martinez\",\"user\":\"5e42c9f712f13c38281fc4e2\",\"hospital\":\"5e431393b3365b591467fe5c\",\"__v\":0}}"
 						}
-					],
-					"cookie": [],
-					"responseTime": 35,
-					"body": "{\"ok\":false,\"message\":\"No existe un usuario con ese id 5e42c6ccae557f4e9019de9f\",\"erros\":{\"message\":\"No existe un usuario con ese id\"}}"
+					]
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"description": "",
+			"item": [
+				{
+					"name": "Get search all",
+					"request": {
+						"url": "http://localhost:3001/search/all/Alexander",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "http://localhost:3001/search/all/Alexander"
+					},
+					"response": []
+				},
+				{
+					"name": "GET colletions",
+					"request": {
+						"url": "http://localhost:3001/search/collection/hospital/Uribe",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "http://localhost:3001/search/collection/hospital/Uribe"
+					},
+					"response": []
 				}
 			]
 		},
@@ -502,7 +1460,7 @@
 			},
 			"response": [
 				{
-					"id": "c50ff371-bdc0-45eb-8b63-a54acb8cac63",
+					"id": "7287e386-8f52-475c-a273-316d1ac2c1ce",
 					"name": "Login",
 					"originalRequest": {
 						"url": "http://localhost:3001/login",
@@ -580,7 +1538,7 @@
 					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\"$2a$10$X3Ju.Wk83IA4tgiAyA3fDOGLwyD39bddMGcNodPvaH5shhMcVTBsK\",\"__v\":0},\"id\":\"5e42c9f712f13c38281fc4e2\"}"
 				},
 				{
-					"id": "d7017248-6ea6-41b6-bdf3-ab9da612b98d",
+					"id": "a7a01ddf-61cc-4cac-954b-9dc9d74e1b6b",
 					"name": "Login",
 					"originalRequest": {
 						"url": "http://localhost:3001/login",
@@ -655,6 +1613,112 @@
 					"cookie": [],
 					"responseTime": 1524,
 					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\":)\",\"__v\":0},\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNDM2NzQxLCJleHAiOjE1ODE0NTExNDF9.16_LCuSiPpW51tLwlh-ggraPql3aBVbdIRmLBfQl3N8\",\"id\":\"5e42c9f712f13c38281fc4e2\"}"
+				}
+			]
+		},
+		{
+			"name": "Upload Imagen (user/doctor/hospital)",
+			"request": {
+				"url": "http://localhost:3001/upload/doctor/5e4404a9a2600a0604825cec",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imagen",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image uploaded (user, doctor, hospital)",
+			"request": {
+				"url": "http://localhost:3001/img/user/5e45a7bc54b1a959ec3cab54-786.png",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get imagen"
+			},
+			"response": [
+				{
+					"id": "9c0ebbc5-4607-41a3-a9fe-69a3e54b2cd2",
+					"name": "Get Image uploaded (user, doctor, hospital)",
+					"originalRequest": {
+						"url": "http://localhost:3001/img/user/5e45a7bc54b1a959ec3cab54-786.png",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "image",
+					"header": [
+						{
+							"name": "accept-ranges",
+							"key": "accept-ranges",
+							"value": "bytes",
+							"description": "Content-Types that are acceptable"
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "public, max-age=0",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "86856",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "image/png",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 27 Feb 2020 21:19:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"15348-1708743b2de\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "last-modified",
+							"key": "last-modified",
+							"value": "Thu, 27 Feb 2020 15:28:45 GMT",
+							"description": "The last modified date for the requested object, in RFC 2822 format"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 64,
+					"body": "{\"ok\":true,\"message\":\"Successful request\"}"
 				}
 			]
 		}
