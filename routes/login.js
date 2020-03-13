@@ -30,7 +30,7 @@ async function verify(token) {
         nombre: payload.name,
         email: payload.email,
         img: payload.picture,
-        google: true;
+        google: true
     }
 }
 

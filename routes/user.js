@@ -118,7 +118,7 @@ app.delete('/:id',mdAuthentication.verifyToken, (req, res) => {
 /**
  * Método para guardar usuario
  */
-app.post('/',mdAuthentication.verifyToken, (req, res) => {
+app.post('/', (req, res) => {
     var body = req.body;
 
     var user = new User({
