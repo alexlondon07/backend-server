@@ -69,12 +69,12 @@ app.post('/google', async (req, res) => {
         } else {
             // Generar Token
             userBD.password = ':)';
-            var token = jwt.sign({ user: userBD }, SEED, { expiresIn: 14400} ); // 4 Horas
+            var tokenGenerate = jwt.sign({ user: userBD }, SEED, { expiresIn: 14400} ); // 4 Horas
 
             res.status(200).json({
                 ok: true,
                 user: userBD,
-                token: token,
+                token: tokenGenerate,
                 id: userBD._id
             });
         }

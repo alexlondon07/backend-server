@@ -137,7 +137,7 @@ app.post('/', (req, res) => {
                 erros: err
             });
         }
-        res.status(404).json({
+        return res.status(202).json({
             ok: true,
             user: userSaved,
             userToken: req.user

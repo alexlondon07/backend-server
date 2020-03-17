@@ -68,7 +68,7 @@
 					},
 					"response": [
 						{
-							"id": "1e33ab22-92eb-4c9e-a577-c65b6c2bbecb",
+							"id": "07f04e45-0aa4-472b-9944-28cedbc279e5",
 							"name": "Post Hospital",
 							"originalRequest": {
 								"url": {
@@ -165,7 +165,7 @@
 							"body": "{\"ok\":true,\"user\":{\"_id\":\"5e430e9d0fbfd32f640f0ea7\",\"name\":\"Hospital Pablo Tobón Uribe\",\"img\":\"null\",\"__v\":0},\"userToken\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\":)\",\"__v\":0}}"
 						},
 						{
-							"id": "69202f86-1328-4a38-adb6-ac7271cef500",
+							"id": "cac93aef-88b9-4f86-9503-ffc3dccd4bc3",
 							"name": "Post Hospital",
 							"originalRequest": {
 								"url": {
@@ -387,7 +387,7 @@
 					},
 					"response": [
 						{
-							"id": "44d4948d-e943-4e5f-9a70-eeb734bb025f",
+							"id": "45691583-2f11-4d64-9dff-63b31decd017",
 							"name": "Put Doctor",
 							"originalRequest": {
 								"url": {
@@ -522,7 +522,7 @@
 					},
 					"response": [
 						{
-							"id": "ba31d9cd-d27b-4af3-a9ab-1e51a6cf5fdd",
+							"id": "52f13953-d992-4789-a3e5-e2d69419a955",
 							"name": "Get users",
 							"originalRequest": {
 								"url": "http://localhost:3001/users",
@@ -581,26 +581,7 @@
 				{
 					"name": "Post User",
 					"request": {
-						"url": {
-							"raw": "http://localhost:3001/users?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNjIzMTg2LCJleHAiOjE1ODE2Mzc1ODZ9.cg1GmVCCJEUBZVNm8Ruy1xFAYXYMKCwIXPsQ04VKx3E",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3001",
-							"path": [
-								"users"
-							],
-							"query": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiX2lkIjoiNWU0MmM5ZjcxMmYxM2MzODI4MWZjNGUyIiwibmFtZSI6IkVtaWxpYW5hIExvbmRvw7FvIE1hcnRpbmV6IiwiZW1haWwiOiJlbWlsaWFuYUBjb3JyZW8uY28iLCJwYXNzd29yZCI6IjopIiwiX192IjowfSwiaWF0IjoxNTgxNjIzMTg2LCJleHAiOjE1ODE2Mzc1ODZ9.cg1GmVCCJEUBZVNm8Ruy1xFAYXYMKCwIXPsQ04VKx3E",
-									"equals": true,
-									"description": ""
-								}
-							],
-							"variable": []
-						},
+						"url": "http://localhost:3001/users",
 						"method": "POST",
 						"header": [
 							{
@@ -642,7 +623,7 @@
 					},
 					"response": [
 						{
-							"id": "32a103de-47eb-462a-b2fb-fe4b5eeb3a13",
+							"id": "482dd6a9-32ec-4785-a5ef-9aa904852601",
 							"name": "Post User",
 							"originalRequest": {
 								"url": "http://localhost:3001/users",
@@ -766,7 +747,7 @@
 					},
 					"response": [
 						{
-							"id": "8b1617ba-ae86-4ddc-a207-e2835e91d3d6",
+							"id": "c071a381-3f22-44b4-b205-8f61906d2714",
 							"name": "Put User",
 							"originalRequest": {
 								"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
@@ -821,7 +802,7 @@
 							"body": "{\"ok\":true}"
 						},
 						{
-							"id": "44028524-e365-4d30-850f-9d17a50b1229",
+							"id": "6f71fa5d-86bf-4ff3-b89d-93b09e14109a",
 							"name": "Put User",
 							"originalRequest": {
 								"url": "http://localhost:3001/users/5e42bb315457c22208df0be9",
@@ -917,7 +898,7 @@
 					},
 					"response": [
 						{
-							"id": "d960a78e-37d2-4c1e-a5ca-2438a6e8dbe7",
+							"id": "2c470f1b-a24d-43bb-b290-5288498c8c82",
 							"name": "Delete User",
 							"originalRequest": {
 								"url": "http://localhost:3001/users/5e42c6ccae557f4e9019de9f",
@@ -1042,7 +1023,7 @@
 					},
 					"response": [
 						{
-							"id": "43d83b6b-c2cc-4a45-b0db-504496423876",
+							"id": "829c4d76-78d2-46dc-b19a-753b4579aa15",
 							"name": "Post Doctor",
 							"originalRequest": {
 								"url": {
@@ -1192,7 +1173,7 @@
 					},
 					"response": [
 						{
-							"id": "2b25bd5c-d0f9-4b30-a768-b43158033d85",
+							"id": "afd5b215-e46f-4411-84c3-ac3701483b4b",
 							"name": "Put Doctor",
 							"originalRequest": {
 								"url": {
@@ -1321,7 +1302,7 @@
 					},
 					"response": [
 						{
-							"id": "595f12d3-98a1-417e-9ecf-e7f9026d32b8",
+							"id": "12153520-cf3b-46bc-9edd-25487090670f",
 							"name": "Delete Doctor",
 							"originalRequest": {
 								"url": {
@@ -1460,7 +1441,7 @@
 			},
 			"response": [
 				{
-					"id": "7287e386-8f52-475c-a273-316d1ac2c1ce",
+					"id": "6673f327-8c5d-4679-b8f5-1e7ab458e29f",
 					"name": "Login",
 					"originalRequest": {
 						"url": "http://localhost:3001/login",
@@ -1538,7 +1519,7 @@
 					"body": "{\"ok\":true,\"user\":{\"role\":\"ADMIN_ROLE\",\"_id\":\"5e42c9f712f13c38281fc4e2\",\"name\":\"Emiliana Londoño Martinez\",\"email\":\"emiliana@correo.co\",\"password\":\"$2a$10$X3Ju.Wk83IA4tgiAyA3fDOGLwyD39bddMGcNodPvaH5shhMcVTBsK\",\"__v\":0},\"id\":\"5e42c9f712f13c38281fc4e2\"}"
 				},
 				{
-					"id": "a7a01ddf-61cc-4cac-954b-9dc9d74e1b6b",
+					"id": "d8f8b654-e268-4f8d-8d90-a39e2e603e9a",
 					"name": "Login",
 					"originalRequest": {
 						"url": "http://localhost:3001/login",
@@ -1648,7 +1629,7 @@
 			},
 			"response": [
 				{
-					"id": "9c0ebbc5-4607-41a3-a9fe-69a3e54b2cd2",
+					"id": "b8747c4f-bba2-42a6-8bde-00b21ed50297",
 					"name": "Get Image uploaded (user, doctor, hospital)",
 					"originalRequest": {
 						"url": "http://localhost:3001/img/user/5e45a7bc54b1a959ec3cab54-786.png",
@@ -1721,6 +1702,17 @@
 					"body": "{\"ok\":true,\"message\":\"Successful request\"}"
 				}
 			]
+		},
+		{
+			"name": "Google",
+			"request": {
+				"url": "http://localhost:3001/login/google",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:3001/login/google"
+			},
+			"response": []
 		}
 	]
 }

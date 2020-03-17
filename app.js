@@ -6,6 +6,15 @@ var bodyParser = require('body-parser')
 // Init variables
 var app = express();
 
+//Cors
+app.use(function(req, res, next) {
+    // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "*"); 
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS");
+    next();
+});
+
 // Body Parser
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
