@@ -105,12 +105,12 @@ app.post('/google', async (req, res) => {
                     });
                 }
 
-                var token = jwt.sign({ user: userBD }, SEED, { expiresIn: 14400} ); // 4 Horas
+                var token = jwt.sign({ user: userSaved }, SEED, { expiresIn: 14400} ); // 4 Horas
                 return res.status(202).json({
                     ok: true,
                     user: userSaved,
                     token: token,
-                    id: userBD._id
+                    id: userSaved._id
                 });
             });
         
